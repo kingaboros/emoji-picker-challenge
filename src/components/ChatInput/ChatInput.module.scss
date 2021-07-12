@@ -1,2 +1,33 @@
 @import '../../themes/colors.scss';
 @import '../../../node_modules//bootstrap/scss/bootstrap.scss';
+
+.chatInputPage {
+  background: $pageBackground;
+}
+
+.inputWrapper {
+  background: $inputBackground;
+  margin: 5rem auto;
+  box-shadow: 0 1px 8px $shadow;
+  width: 25rem;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.heading {
+  @extend .text-white;
+}
+
+.emojiBtn {
+  @extend .btn;
+  @extend .btn-outline-secondary;
+}
+
+.inputWrapper {
+  @extend .input-group;
+  @extend .mb-3;
+}
+
+.inputField {
+  @extend .form-control;
+}
