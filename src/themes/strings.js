@@ -1,6 +1,12 @@
 const strings = {
   heading: {
-    main: 'Hello from Emoji Picker 👋',
+    main: `👋 What's your favorite emoji?`,
+  },
+  button: {
+    emojiBtn: 'Choose here 😎',
+  },
+  input: {
+    inputField: 'Your emoji will be displayed here...',
   },
 };
 

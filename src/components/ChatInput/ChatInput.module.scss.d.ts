@@ -519,6 +519,8 @@ export const hide: string;
 export const imgFluid: string;
 export const imgThumbnail: string;
 export const initialism: string;
+export const input: string;
+export const inputArea: string;
 export const inputField: string;
 export const inputGroup: string;
 export const inputGroupAppend: string;

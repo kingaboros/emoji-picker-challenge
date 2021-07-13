@@ -2,12 +2,12 @@ import React from 'react';
 
 import * as classes from './components/ChatInput/ChatInput.module.scss';
 
-import Input from './components/ChatInput/Input';
+import ChatInput from './components/ChatInput/ChatInput';
 
 const App = () => {
   return (
     <div className={classes.chatInputPage}>
-      <Input />
+      <ChatInput />
     </div>
   );
 };

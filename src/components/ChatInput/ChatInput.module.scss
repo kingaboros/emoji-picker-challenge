@@ -3,24 +3,44 @@
 
 .chatInputPage {
   background: $pageBackground;
+  height: 100vh;
 }
 
 .inputWrapper {
+  margin: 0 auto;
+}
+
+.inputArea {
   background: $inputBackground;
   margin: 5rem auto;
   box-shadow: 0 1px 8px $shadow;
   width: 25rem;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .heading {
-  @extend .text-white;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  @extend .text-dark;
 }
 
+.input {
+  @extend .form-control;
+}
 .emojiBtn {
+  color: $pageBackground;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: 0 1px 8px $shadow;
   @extend .btn;
   @extend .btn-outline-secondary;
+}
+
+.emojiBtn:hover {
+  background-color: $pageBackground;
 }
 
 .inputWrapper {

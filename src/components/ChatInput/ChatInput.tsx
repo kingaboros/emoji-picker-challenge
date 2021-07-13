@@ -1,19 +1,27 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+
+import strings from '../../themes/strings';
 
 import * as classes from './ChatInput.module.scss';
 
-const ChatInput = () => {
+const Input = () => {
   return (
     <div className={classes.inputWrapper}>
-      <h1 className={classes.heading}>Hello from chat input</h1>
-      {/* <Form > 
-        <input type="text" className={classes.inputField} placeholder="Add your favorite emoji here..." >
-        <Button className={classes.emojiBtn} type="button">Button</Button>
-      </Form>
-    </div> */}
+      <div className={classes.inputArea}>
+        <h1 className={classes.heading}>{strings.heading.main}</h1>
+        <input
+          type="text"
+          id="typeText"
+          className={classes.input}
+          placeholder={strings.input.inputField}
+        />
+        <Button className={classes.emojiBtn} type="button">
+          {strings.button.emojiBtn}
+        </Button>
+      </div>
     </div>
   );
 };
 
-export default ChatInput;
+export default Input;
