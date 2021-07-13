@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
-import Emojis from '../../emojis/emojisList.json';
+import Emojis from '../../emojisDb/emojisList.json';
 import * as classes from './IconTabs.module.scss';
 
 const IconTabs = (props: any) => {
