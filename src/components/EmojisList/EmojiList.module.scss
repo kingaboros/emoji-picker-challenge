@@ -1,0 +1,39 @@
+@import '../../themes/colors.scss';
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.contentWrapper {
+  padding: 0.2rem 0.7rem 0 0.7rem;
+}
+
+.iconCategoryHeading {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.emojiWrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  width: auto;
+  @extend .container;
+}
+
+.emojiRow {
+  @extend .row;
+}
+
+.emojis {
+  display: block;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 75rem;
+  border: 0.1rem solid $iconsBackground;
+  @extend .col-4;
+}
+.emojiIcons:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: $shadow;
+  border: 0.1rem solid $shadow;
+  border-radius: 0.4rem;
+}
