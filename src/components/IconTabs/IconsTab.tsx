@@ -1,11 +1,12 @@
 import React from 'react';
 
 import { FiClock, FiFlag } from 'react-icons/fi';
+import { BsFillPeopleFill } from 'react-icons/bs';
 import { GoSmiley } from 'react-icons/go';
 import { FaLeaf } from 'react-icons/fa';
 import { GiHamburger, GiCommercialAirplane } from 'react-icons/gi';
 import { BiBall } from 'react-icons/bi';
-import { AiOutlineBulb, AiOutlineSlack } from 'react-icons/ai';
+import { AiOutlineBulb } from 'react-icons/ai';
 import { VscSymbolMethod } from 'react-icons/vsc';
 
 import Emojis from '../../emojisDb/emojisList.json';
@@ -21,6 +22,9 @@ const iconsTab = () => {
         </li>
         <li>
           <GoSmiley className={classes.icons} />
+        </li>
+        <li>
+          <BsFillPeopleFill className={classes.icons} />
         </li>
         <li>
           <FaLeaf className={classes.icons} />
@@ -43,35 +47,7 @@ const iconsTab = () => {
         <li>
           <FiFlag className={classes.icons} />
         </li>
-        <li>
-          <AiOutlineSlack className={classes.icons} />
-        </li>
       </ul>
-      <div className={classes.contentWrapper}>
-        {Emojis.map(emoji => {
-          console.log(emoji.category);
-          return (
-            <h4 className={classes.iconCategoryHeading} key={emoji.emoji}>
-              {emoji.category}
-            </h4>
-          );
-        })}
-
-        <div className={classes.emojiWrapper}>
-          <div className={classes.emojiRow}>
-            <div className={classes.emojis}>
-              {Emojis.map(emoji => {
-                console.log(emoji.category);
-                return (
-                  <a className={classes.emojiIcons} key={emoji.description}>
-                    {emoji.emoji}
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
