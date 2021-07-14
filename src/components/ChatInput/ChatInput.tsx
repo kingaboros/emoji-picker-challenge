@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 
-import Emojis from '../../emojisDb/emojisList.json';
 import strings from '../../themes/strings';
 
 import * as classes from './ChatInput.module.scss';
@@ -9,14 +8,12 @@ import * as classes from './ChatInput.module.scss';
 const ChatInput = (props: any) => {
   const [showEmojis, setShowEmojis] = useState();
 
-  const handleShowEmojis = () => {
-    setShowEmojis(showEmojis);
-  };
-
-  const clickHandler = (e: any) => {
+  const handleShowEmojis = (e: any) => {
     e.preventDefault();
+    setShowEmojis(showEmojis);
     console.log('button clicked');
   };
+
   return (
     <div className={classes.inputWrapper}>
       <div className={classes.inputArea}>

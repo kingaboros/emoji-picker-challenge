@@ -39,7 +39,8 @@
   @extend .btn-outline-secondary;
 }
 
-.emojiBtn:hover {
+.emojiBtn:hover,
+.emojiBtn:focus {
   background-color: $pageBackground;
 }
 
