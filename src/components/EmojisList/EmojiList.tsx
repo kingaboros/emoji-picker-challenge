@@ -1,4 +1,5 @@
 import React from 'react';
+import { FixedSizeList as List } from 'react-window';
 
 import Emojis from '../../emojisDb/emojisList.json';
 
