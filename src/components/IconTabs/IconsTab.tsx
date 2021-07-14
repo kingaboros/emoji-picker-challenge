@@ -9,9 +9,8 @@ import { BiBall } from 'react-icons/bi';
 import { AiOutlineBulb } from 'react-icons/ai';
 import { VscSymbolMethod } from 'react-icons/vsc';
 
-import Emojis from '../../emojisDb/emojisList.json';
-
 import * as classes from './IconTabs.module.scss';
+import EmojiList from '../EmojisList/EmojiList';
 
 const iconsTab = () => {
   return (
@@ -48,6 +47,9 @@ const iconsTab = () => {
           <FiFlag className={classes.icons} />
         </li>
       </ul>
+      <div>
+        <EmojiList />
+      </div>
     </div>
   );
 };
