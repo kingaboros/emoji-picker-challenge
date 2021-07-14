@@ -13,6 +13,7 @@ const IconTabs = (props: any) => {
       <ul className="nav nav-tabs">
         <li className="nav-item">
           {Emojis.map(emoji => {
+            console.log(emoji.category);
             return <a key={emoji.description}>{emoji.emoji}</a>;
           })}
         </li>
