@@ -29,18 +29,33 @@
 .input {
   @extend .form-control;
 }
-.emojiBtn {
+
+.inputForm {
+  margin-bottom: 0;
+}
+
+.inputIcon {
+  color: $iconsColor;
+  display: flex;
+  position: relative;
+  bottom: 1.6rem;
+  left: 19rem;
+}
+.inputIcon:hover {
+  color: $pageBackground;
+  cursor: pointer;
+}
+.submitBtn {
   color: $pageBackground;
   font-weight: bold;
   width: 100%;
-  margin-top: 1rem;
   box-shadow: 0 1px 8px $shadow;
   @extend .btn;
   @extend .btn-outline-secondary;
 }
 
-.emojiBtn:hover,
-.emojiBtn:focus {
+.submitBtn:hover,
+.submitBtn:focus {
   background-color: $pageBackground;
 }
 
