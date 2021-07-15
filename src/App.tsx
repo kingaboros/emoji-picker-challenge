@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 
 import * as classes from './components/ChatInput/ChatInput.module.scss';
 
@@ -17,10 +17,12 @@ const App = () => {
   };
 
   return (
-    <div className={classes.chatInputPage}>
-      {emojisShown && <IconsTab />}
-      <ChatInput onShowEmojis={showEmojiHandler} />
-    </div>
+    <Fragment>
+      <div className={classes.chatInputPage}>
+        {emojisShown && <IconsTab />}
+        <ChatInput onShowEmojis={showEmojiHandler} />
+      </div>
+    </Fragment>
   );
 };
 
