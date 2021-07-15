@@ -3,10 +3,10 @@ const strings = {
     main: `👋 What's your favorite emoji?`,
   },
   button: {
-    emojiBtn: 'Choose here 😎',
+    submitBtn: 'Enter',
   },
   input: {
-    inputField: 'Your emoji will be displayed here...',
+    inputField: 'Start typing...',
   },
 };
 
