@@ -6,9 +6,6 @@ import Emojis from '../../emojisDb/emojisList.json';
 import * as classes from './EmojiList.module.scss';
 
 const emojiList = (props: any) => {
-  const { isScrolling, style, index } = props;
-
-  // if (!isScrolling) {
   return (
     <div className={classes.contentWrapper}>
       <div>

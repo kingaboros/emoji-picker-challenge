@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Alert } from 'react-bootstrap';
 
 import { GoSmiley } from 'react-icons/go';
 
@@ -20,6 +20,7 @@ const ChatInput = (props: any) => {
     <div className={classes.inputWrapper}>
       <div className={classes.inputArea}>
         <h1 className={classes.heading}>{strings.heading.main}</h1>
+
         <Form onClick={handleSubmit}>
           <Form.Group className={classes.inputForm}>
             <Form.Control
@@ -31,7 +32,10 @@ const ChatInput = (props: any) => {
               onChange={(e: any) => setValue(e.target.value)}
             />
 
-            <GoSmiley className={classes.inputIcon} />
+            <GoSmiley
+              className={classes.inputIcon}
+              onClick={props.onShowEmojis}
+            />
           </Form.Group>
           <Button className={classes.submitBtn} type="button">
             {strings.button.submitBtn}
