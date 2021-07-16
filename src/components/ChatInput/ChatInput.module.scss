@@ -8,11 +8,12 @@
 
 .inputWrapper {
   margin: 0 auto;
+  position: static;
 }
 
 .inputArea {
   background: $inputBackground;
-  margin: 5rem auto;
+  margin: 6rem auto;
   box-shadow: 0 1px 8px $shadow;
   width: 25rem;
   border-radius: 8px;
@@ -66,4 +67,10 @@
 
 .inputField {
   @extend .form-control;
+}
+
+@media only screen and (min-width: 1440px) {
+  .inputArea {
+    margin: 20rem auto;
+  }
 }

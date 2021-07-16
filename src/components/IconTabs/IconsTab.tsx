@@ -16,10 +16,10 @@ const iconsTab = () => {
   return (
     <div className={classes.iconsTabWrapper}>
       <ul className={classes.tabs}>
-        <li className={classes.currentTab}>
+        <li>
           <FiClock className={classes.icons} />
         </li>
-        <li>
+        <li className={classes.currentTab}>
           <GoSmiley className={classes.icons} />
         </li>
         <li>

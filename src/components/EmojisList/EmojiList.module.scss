@@ -3,6 +3,7 @@
 
 .contentWrapper {
   padding: 0.2rem 0.7rem 0 0.7rem;
+  word-wrap: break-word;
 }
 
 .iconCategoryHeading {
@@ -35,4 +36,12 @@
   background-color: $shadow;
   border: 0.1rem solid $shadow;
   border-radius: 0.4rem;
+}
+
+.currentEmojiList {
+  display: block;
+}
+
+.emojiList {
+  display: none;
 }
