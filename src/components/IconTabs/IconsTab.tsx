@@ -12,7 +12,7 @@ import { VscSymbolMethod } from 'react-icons/vsc';
 import * as classes from './IconTabs.module.scss';
 import EmojiList from '../EmojisList/EmojiList';
 
-const iconsTab = () => {
+const IconsTab = () => {
   return (
     <div className={classes.iconsTabWrapper}>
       <ul className={classes.tabs}>
@@ -54,4 +54,4 @@ const iconsTab = () => {
   );
 };
 
-export default iconsTab;
+export default IconsTab;

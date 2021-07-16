@@ -7,10 +7,10 @@ import EmojiList from './EmojiList';
 
 const emojis = data;
 
-const fixedSizedList = (props: any) => (
+const FixedSizedList = (props: any) => (
   <List height={200} width={400} itemSize={50} itemCount={emojis.length}>
     {EmojiList}
   </List>
 );
 
-export default fixedSizedList;
+export default FixedSizedList;

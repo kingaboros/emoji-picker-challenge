@@ -4,7 +4,7 @@ import Emojis from '../../emojisDb/emojisList.json';
 
 import * as emojiClasses from './EmojiList.module.scss';
 
-const emojiList = (props: any) => {
+const EmojiList = (props: any) => {
   return (
     <div className={emojiClasses.contentWrapper}>
       <div className={emojiClasses.currentEmojiList}>
@@ -281,4 +281,4 @@ const emojiList = (props: any) => {
   );
 };
 
-export default emojiList;
+export default EmojiList;
