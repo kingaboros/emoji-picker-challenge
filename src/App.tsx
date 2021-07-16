@@ -12,9 +12,9 @@ const App = () => {
     setEmojisShown(true);
   };
 
-  const hideEmojiHandler = () => {
-    setEmojisShown(false);
-  };
+  // const hideEmojiHandler = () => {
+  //   setEmojisShown(false);
+  // };
 
   return (
     <div className={classes.chatInputPage}>
