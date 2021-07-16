@@ -13,8 +13,9 @@ import { VscSymbolMethod } from 'react-icons/vsc';
 
 import * as classes from '../IconTabs/IconTabs.module.scss';
 import * as emojiClasses from '../EmojisList/EmojiList.module.scss';
+import SingleIconTab from '../IconTabs/SingleIconTab';
 
-const Tabs = () => {
+const Tabs = (props: any) => {
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index: any) => {
@@ -93,16 +94,10 @@ const Tabs = () => {
             }
           >
             <div>
-              {Emojis.map((emoji: any) => {
-                return (
-                  <h4
-                    className={emojiClasses.iconCategoryHeading}
-                    key={emoji.emojiSmileys}
-                  >
-                    {emoji.category1}
-                  </h4>
-                );
-              })}
+              <SingleIconTab
+                key={props.emojiSmileys}
+                category={props.category1}
+              />
             </div>
 
             <div className={emojiClasses.emojiWrapper}>
@@ -129,17 +124,8 @@ const Tabs = () => {
                 : emojiClasses.emojiList
             }
           >
-            <div>
-              {Emojis.map((emoji: any) => {
-                return (
-                  <h4
-                    className={emojiClasses.iconCategoryHeading}
-                    key={emoji.emojiPeople}
-                  >
-                    {emoji.category2}
-                  </h4>
-                );
-              })}
+            <div className={emojiClasses.iconCategoryHeading}>
+              <SingleIconTab key={props.key} category={props.category} />
             </div>
 
             <div className={emojiClasses.emojiWrapper}>
@@ -167,16 +153,10 @@ const Tabs = () => {
             }
           >
             <div>
-              {Emojis.map((emoji: any) => {
-                return (
-                  <h4
-                    className={emojiClasses.iconCategoryHeading}
-                    key={emoji.emojiNature}
-                  >
-                    {emoji.category3}
-                  </h4>
-                );
-              })}
+              <SingleIconTab
+                key={props.emojiNature}
+                category={props.category3}
+              />
             </div>
             <div className={emojiClasses.emojiWrapper}>
               <div className={emojiClasses.emojiRow}>
@@ -203,16 +183,7 @@ const Tabs = () => {
             }
           >
             <div>
-              {Emojis.map((emoji: any) => {
-                return (
-                  <h4
-                    className={emojiClasses.iconCategoryHeading}
-                    key={emoji.emojiFood}
-                  >
-                    {emoji.category4}
-                  </h4>
-                );
-              })}
+              <SingleIconTab key={props.emojiFood} category={props.category4} />
             </div>
 
             <div className={emojiClasses.emojiWrapper}>
@@ -240,16 +211,10 @@ const Tabs = () => {
             }
           >
             <div>
-              {Emojis.map((emoji: any) => {
-                return (
-                  <h4
-                    className={emojiClasses.iconCategoryHeading}
-                    key={emoji.emojiTravel}
-                  >
-                    {emoji.category5}
-                  </h4>
-                );
-              })}
+              <SingleIconTab
+                key={props.emojiTravel}
+                category={props.category5}
+              />
             </div>
 
             <div className={emojiClasses.emojiWrapper}>
@@ -277,16 +242,10 @@ const Tabs = () => {
             }
           >
             <div>
-              {Emojis.map((emoji: any) => {
-                return (
-                  <h4
-                    className={emojiClasses.iconCategoryHeading}
-                    key={emoji.emojiActivities}
-                  >
-                    {emoji.category6}
-                  </h4>
-                );
-              })}
+              <SingleIconTab
+                key={props.emojiActivities}
+                category={props.category6}
+              />
             </div>
             <div className={emojiClasses.emojiWrapper}>
               <div className={emojiClasses.emojiRow}>
@@ -313,16 +272,10 @@ const Tabs = () => {
             }
           >
             <div>
-              {Emojis.map((emoji: any) => {
-                return (
-                  <h4
-                    className={emojiClasses.iconCategoryHeading}
-                    key={emoji.emojiObjects}
-                  >
-                    {emoji.category7}
-                  </h4>
-                );
-              })}
+              <SingleIconTab
+                key={props.emojiObjects}
+                category={props.category7}
+              />
             </div>
 
             <div className={emojiClasses.emojiWrapper}>
@@ -350,16 +303,10 @@ const Tabs = () => {
             }
           >
             <div>
-              {Emojis.map((emoji: any) => {
-                return (
-                  <h4
-                    className={emojiClasses.iconCategoryHeading}
-                    key={emoji.emojiSymbols}
-                  >
-                    {emoji.category8}
-                  </h4>
-                );
-              })}
+              <SingleIconTab
+                key={props.emojiSymbols}
+                category={props.category8}
+              />
             </div>
 
             <div className={emojiClasses.emojiWrapper}>
@@ -387,16 +334,10 @@ const Tabs = () => {
             }
           >
             <div>
-              {Emojis.map((emoji: any) => {
-                return (
-                  <h4
-                    className={emojiClasses.iconCategoryHeading}
-                    key={emoji.emojiFlags}
-                  >
-                    {emoji.category9}
-                  </h4>
-                );
-              })}
+              <SingleIconTab
+                key={props.emojiFlags}
+                category={props.category9}
+              />
             </div>
             <div className={emojiClasses.emojiWrapper}>
               <div className={emojiClasses.emojiRow}>
