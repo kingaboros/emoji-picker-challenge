@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import SearchBar from '../Search/SearchBar';
 import Emojis from '../../emojisDb/emojisList.json';
 
 import { FiClock, FiFlag } from 'react-icons/fi';
@@ -83,6 +83,8 @@ const Tabs = () => {
             <FiFlag className={classes.icons} />
           </li>
         </ul>
+
+        <SearchBar data={Emojis} />
 
         <div className={emojiClasses.contentWrapper}>
           <div

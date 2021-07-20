@@ -16,6 +16,9 @@
   margin: 0 auto;
   justify-content: space-evenly;
   width: auto;
+  height: 16rem;
+  overflow: scroll;
+  overflow-x: hidden;
   @extend .container;
 }
 
@@ -27,7 +30,7 @@
   display: block;
   justify-content: space-evenly;
   margin: 0 auto;
-  width: 75rem;
+  width: 72rem;
   @extend .col-4;
 }
 .emojiIcons:hover {

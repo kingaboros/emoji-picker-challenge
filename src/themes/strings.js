@@ -7,6 +7,7 @@ const strings = {
   },
   input: {
     inputField: 'Start typing...',
+    searchField: 'Search',
   },
 };
 

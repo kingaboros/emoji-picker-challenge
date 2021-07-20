@@ -1,2 +1,29 @@
 @import '../../themes/colors.scss';
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.search {
+  background-color: $pageBackground;
+}
+
+.searchInput {
+  font-size: 0.6rem;
+  padding: 0 0.5rem;
+  margin-bottom: -1rem;
+}
+
+.searchInputField {
+  width: 23.5rem;
+  border: none;
+  height: 2rem;
+  text-indent: 1.7rem;
+  @extend .form-control;
+}
+
+.searchIcon {
+  font-size: 1.5rem;
+  color: $iconsColor;
+  display: flex;
+  position: relative;
+  bottom: 1.7rem;
+  right: -0.5rem;
+}
