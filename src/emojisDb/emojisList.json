@@ -2257,10 +2257,10 @@
     "skin_tones": true
   },
   {
-    "emojiPeople": "💁‍♀️",
-    "description": "woman tipping hand",
+    "emojiPeople": "💁‍♂️",
+    "description": "man tipping hand",
     "category": "People & Body",
-    "aliases": ["tipping_hand_woman", "sassy_woman"],
+    "aliases": ["tipping_hand_man", "sassy_man"],
     "tags": ["information"],
     "unicode_version": "11.0",
     "ios_version": "12.1",
@@ -5313,10 +5313,10 @@
     "ios_version": "13.0"
   },
   {
-    "emojiNature": "🦘",
-    "description": "kangaroo",
+    "emojiNature": "🦨",
+    "description": "skunk",
     "category": "Animals & Nature",
-    "aliases": ["kangaroo"],
+    "aliases": ["skunk"],
     "tags": [],
     "unicode_version": "11.0",
     "ios_version": "12.1"
