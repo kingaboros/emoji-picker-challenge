@@ -4,6 +4,7 @@ import * as classes from './components/ChatInput/ChatInput.module.scss';
 
 import ChatInput from './components/ChatInput/ChatInput';
 import Tabs from './components/Tabs/Tabs';
+import EmojiList from './components/EmojisList/EmojiList';
 
 const App = () => {
   const [emojisShown, setEmojisShown] = useState(false);
@@ -12,13 +13,9 @@ const App = () => {
     setEmojisShown(true);
   };
 
-  // const hideEmojiHandler = () => {
-  //   setEmojisShown(false);
-  // };
-
   return (
     <div className={classes.chatInputPage}>
-      {emojisShown && <Tabs />}
+      {emojisShown && <EmojiList />}
       <ChatInput onShowEmojis={showEmojiHandler} />
     </div>
   );
