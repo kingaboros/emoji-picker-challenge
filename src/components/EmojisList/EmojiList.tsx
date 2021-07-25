@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as emojiClasses from './EmojiList.module.scss';
 
-const EmojiList = () => {
+const EmojiList = (props: any) => {
   const json = require('../../emojisDb/emojis.json');
 
   return (
@@ -10,7 +10,7 @@ const EmojiList = () => {
       <div className={emojiClasses.currentEmojiList}>
         <div className={emojiClasses.emojiWrapper}>
           <div className={emojiClasses.emojiRow}>
-            {Object.keys(json).map(categ => {
+            {Object.keys(json).map((categ: any) => {
               return (
                 <div>
                   <div>

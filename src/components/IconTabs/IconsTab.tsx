@@ -1,8 +1,9 @@
 import React from 'react';
 
-import icons from '../../themes/icons';
 import EmojiList from '../EmojisList/EmojiList';
 import SearchBar from '../Search/SearchBar';
+
+import icons from '../../themes/icons';
 
 import * as classes from './IconTabs.module.scss';
 
