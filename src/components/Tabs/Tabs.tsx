@@ -13,6 +13,7 @@ import { VscSymbolMethod } from 'react-icons/vsc';
 
 import * as classes from '../IconTabs/IconTabs.module.scss';
 import * as emojiClasses from '../EmojisList/EmojiList.module.scss';
+import EmojiList from '../EmojisList/EmojiList';
 
 const Tabs = () => {
   const [toggleState, setToggleState] = useState(1);

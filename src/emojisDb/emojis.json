@@ -895,7 +895,7 @@
       "tags": ["sleeping", "zzz"]
     }
   ],
-  "People & Body": [
+  "People": [
     {
       "id": 150,
       "emoji": "👋",
@@ -3155,7 +3155,7 @@
       "tags": ["leaf", "leaves"]
     }
   ],
-  "Food & Drink": [
+  "Food & Drinks": [
     {
       "id": 528,
       "emoji": "🍇",
@@ -7268,369 +7268,369 @@
   "Symbols": [
     {
       "id": 1155,
-      "emojiSymbols": "🏧",
+      "emoji": "🏧",
       "description": "ATM sign",
       "category8": "Symbols",
       "tags": ["atm"]
     },
     {
       "id": 1156,
-      "emojiSymbols": "🚮",
+      "emoji": "🚮",
       "description": "litter in bin sign",
       "tags": ["put_litter_in_its_place"]
     },
     {
       "id": 1157,
-      "emojiSymbols": "🚰",
+      "emoji": "🚰",
       "description": "potable water",
       "tags": ["potable_water"]
     },
     {
       "id": 1158,
-      "emojiSymbols": "♿",
+      "emoji": "♿",
       "description": "wheelchair symbol",
       "tags": ["accessibility", "wheelchair"]
     },
     {
       "id": 1159,
-      "emojiSymbols": "🚹",
+      "emoji": "🚹",
       "description": "men’s room",
       "tags": ["mens"]
     },
     {
       "id": 1160,
-      "emojiSymbols": "🚺",
+      "emoji": "🚺",
       "description": "women’s room",
       "tags": ["womens"]
     },
     {
       "id": 1161,
-      "emojiSymbols": "🚻",
+      "emoji": "🚻",
       "description": "restroom",
       "tags": ["toilet", "restroom"]
     },
     {
       "id": 1162,
-      "emojiSymbols": "🚼",
+      "emoji": "🚼",
       "description": "baby symbol",
       "tags": ["baby_symbol"]
     },
     {
       "id": 1163,
-      "emojiSymbols": "🚾",
+      "emoji": "🚾",
       "description": "water closet",
       "tags": ["toilet", "restroom", "wc"]
     },
     {
       "id": 1164,
-      "emojiSymbols": "🛂",
+      "emoji": "🛂",
       "description": "passport control",
       "tags": ["passport_control"]
     },
     {
       "id": 1165,
-      "emojiSymbols": "🛃",
+      "emoji": "🛃",
       "description": "customs",
       "tags": ["customs"]
     },
     {
       "id": 1166,
-      "emojiSymbols": "🛄",
+      "emoji": "🛄",
       "description": "baggage claim",
       "tags": ["airport", "baggage_claim"]
     },
     {
       "id": 1167,
-      "emojiSymbols": "🛅",
+      "emoji": "🛅",
       "description": "left luggage",
       "tags": ["left_luggage"]
     },
     {
       "id": 1168,
 
-      "emojiSymbols": "⚠️",
+      "emoji": "⚠️",
       "description": "warning",
       "tags": ["wip", "warning"]
     },
     {
       "id": 1169,
-      "emojiSymbols": "🚸",
+      "emoji": "🚸",
       "description": "children crossing",
       "tags": ["children_crossing"]
     },
     {
       "id": 1170,
-      "emojiSymbols": "⛔",
+      "emoji": "⛔",
       "description": "no entry",
       "tags": ["limit", "no_entry"]
     },
     {
       "id": 1171,
-      "emojiSymbols": "🚫",
+      "emoji": "🚫",
       "description": "prohibited",
       "tags": ["block", "forbidden", "no_entry_sign"]
     },
     {
       "id": 1172,
-      "emojiSymbols": "🚳",
+      "emoji": "🚳",
       "description": "no bicycles",
       "tags": ["no_bicycles"]
     },
     {
       "id": 1173,
-      "emojiSymbols": "🚭",
+      "emoji": "🚭",
       "description": "no smoking",
       "tags": ["no_smoking"]
     },
     {
       "id": 1174,
-      "emojiSymbols": "🚯",
+      "emoji": "🚯",
       "description": "no littering",
       "tags": ["do_not_litter"]
     },
     {
       "id": 1175,
-      "emojiSymbols": "🚱",
+      "emoji": "🚱",
       "description": "non-potable water",
       "tags": ["non-potable_water"]
     },
     {
       "id": 1176,
-      "emojiSymbols": "🚷",
+      "emoji": "🚷",
       "description": "no pedestrians",
       "tags": ["no_pedestrians"]
     },
     {
       "id": 1177,
-      "emojiSymbols": "📵",
+      "emoji": "📵",
       "description": "no mobile phones",
       "tags": ["no_mobile_phones"]
     },
     {
       "id": 1178,
-      "emojiSymbols": "🔞",
+      "emoji": "🔞",
       "description": "no one under eighteen",
       "tags": ["underage"]
     },
     {
       "id": 1179,
-      "emojiSymbols": "☢️",
+      "emoji": "☢️",
       "description": "radioactive",
       "tags": ["radioactive"]
     },
     {
       "id": 1180,
-      "emojiSymbols": "☣️",
+      "emoji": "☣️",
       "description": "biohazard",
       "tags": ["biohazard"]
     },
     {
       "id": 1181,
-      "emojiSymbols": "⬆️",
+      "emoji": "⬆️",
       "description": "up arrow",
       "tags": ["arrow_up"]
     },
     {
       "id": 1182,
-      "emojiSymbols": "↗️",
+      "emoji": "↗️",
       "description": "up-right arrow",
       "tags": ["arrow_upper_right"]
     },
     {
       "id": 1183,
-      "emojiSymbols": "➡️",
+      "emoji": "➡️",
       "description": "right arrow",
       "tags": ["arrow_right"]
     },
     {
       "id": 1184,
-      "emojiSymbols": "↘️",
+      "emoji": "↘️",
       "description": "down-right arrow",
       "tags": ["arrow_lower_right"]
     },
     {
       "id": 1185,
-      "emojiSymbols": "⬇️",
+      "emoji": "⬇️",
       "description": "down arrow",
       "tags": ["arrow_down"]
     },
     {
       "id": 1186,
-      "emojiSymbols": "↙️",
+      "emoji": "↙️",
       "description": "down-left arrow",
       "tags": ["arrow_lower_left"]
     },
     {
       "id": 1187,
-      "emojiSymbols": "⬅️",
+      "emoji": "⬅️",
       "description": "left arrow",
       "tags": ["arrow_left"]
     },
     {
       "id": 1188,
-      "emojiSymbols": "↖️",
+      "emoji": "↖️",
       "description": "up-left arrow",
       "tags": ["arrow_upper_left"]
     },
     {
       "id": 1189,
-      "emojiSymbols": "↕️",
+      "emoji": "↕️",
       "description": "up-down arrow",
       "tags": ["arrow_up_down"]
     },
     {
       "id": 1190,
-      "emojiSymbols": "↔️",
+      "emoji": "↔️",
       "description": "left-right arrow",
       "tags": ["left_right_arrow"]
     },
     {
       "id": 1191,
-      "emojiSymbols": "↩️",
+      "emoji": "↩️",
       "description": "right arrow curving left",
       "tags": ["return"]
     },
     {
       "id": 1192,
-      "emojiSymbols": "↪️",
+      "emoji": "↪️",
       "description": "left arrow curving right",
       "tags": ["arrow_right_hook"]
     },
     {
       "id": 1193,
-      "emojiSymbols": "⤴️",
+      "emoji": "⤴️",
       "description": "right arrow curving up",
       "tags": ["arrow_heading_up"]
     },
     {
       "id": 1194,
-      "emojiSymbols": "⤵️",
+      "emoji": "⤵️",
       "description": "right arrow curving down",
       "tags": ["arrow_heading_down"]
     },
     {
       "id": 1195,
-      "emojiSymbols": "🔃",
+      "emoji": "🔃",
       "description": "clockwise vertical arrows",
       "tags": ["arrows_clockwise"]
     },
     {
       "id": 1196,
-      "emojiSymbols": "🔄",
+      "emoji": "🔄",
       "description": "counterclockwise arrows button",
       "tags": ["sync"]
     },
     {
       "id": 1197,
-      "emojiSymbols": "✅",
+      "emoji": "✅",
       "description": "check mark button",
       "tags": ["white_check_mark"]
     },
     {
       "id": 1198,
-      "emojiSymbols": "✔️",
+      "emoji": "✔️",
       "description": "check mark",
       "tags": ["heavy_check_mark"]
     },
     {
       "id": 1199,
-      "emojiSymbols": "❌",
+      "emoji": "❌",
       "description": "cross mark",
       "tags": ["x"]
     },
     {
       "id": 1201,
-      "emojiSymbols": "➰",
+      "emoji": "➰",
       "description": "curly loop",
       "tags": ["curly_loop"]
     },
     {
       "id": 1202,
-      "emojiSymbols": "✳️",
+      "emoji": "✳️",
       "description": "eight-spoked asterisk",
       "tags": ["eight_spoked_asterisk"]
     },
     {
       "id": 1203,
-      "emojiSymbols": "#️⃣",
+      "emoji": "#️⃣",
       "description": "keycap: #",
       "tags": ["number", "hash"]
     },
     {
       "id": 1204,
-      "emojiSymbols": "🔢",
+      "emoji": "🔢",
       "description": "input numbers",
       "tags": ["numbers"]
     },
     {
       "id": 1205,
-      "emojiSymbols": "🆔",
+      "emoji": "🆔",
       "description": "ID button",
       "tags": ["id"]
     },
     {
       "id": 1206,
-      "emojiSymbols": "🆖",
+      "emoji": "🆖",
       "description": "NG button",
       "tags": ["ng"]
     },
     {
       "id": 1207,
-      "emojiSymbols": "🆗",
+      "emoji": "🆗",
       "description": "OK button",
       "tags": ["yes", "ok"]
     },
     {
       "id": 1208,
-      "emojiSymbols": "🟢",
+      "emoji": "🟢",
       "description": "green circle",
       "tags": ["green_circle"]
     },
     {
       "id": 1209,
-      "emojiSymbols": "🟣",
+      "emoji": "🟣",
       "description": "purple circle",
       "tags": ["purple_circle"]
     },
     {
       "id": 1210,
-      "emojiSymbols": "🟥",
+      "emoji": "🟥",
       "description": "red square",
       "tags": ["red_square"]
     },
     {
       "id": 1211,
-      "emojiSymbols": "🟦",
+      "emoji": "🟦",
       "description": "blue square",
       "tags": ["blue_square"]
     },
     {
       "id": 1212,
-      "emojiSymbols": "⬜",
+      "emoji": "⬜",
       "description": "white large square",
       "tags": ["white_large_square"]
     },
     {
       "id": 1213,
-      "emojiSymbols": "🔶",
+      "emoji": "🔶",
       "description": "large orange diamond",
       "tags": ["large_orange_diamond"]
     },
     {
       "id": 1214,
-      "emojiSymbols": "🔻",
+      "emoji": "🔻",
       "description": "red triangle pointed down",
       "tags": ["small_red_triangle_down"]
     },
     {
       "id": 1215,
-      "emojiSymbols": "🔘",
+      "emoji": "🔘",
       "description": "radio button",
       "tags": ["radio_button"]
     },
     {
       "id": 1216,
-      "emojiSymbols": "🔲",
+      "emoji": "🔲",
       "description": "black square button",
       "tags": ["black_square_button"]
     }
@@ -7638,146 +7638,146 @@
   "Flags": [
     {
       "id": 1217,
-      "emojiFlags": "🏁",
+      "emoji": "🏁",
       "description": "chequered flag",
       "category9": "Flags",
       "tags": ["milestone", "finish"]
     },
     {
       "id": 1218,
-      "emojiFlags": "🚩",
+      "emoji": "🚩",
       "description": "triangular flag",
       "tags": ["triangular_flag_on_post"]
     },
     {
       "id": 1219,
-      "emojiFlags": "🎌",
+      "emoji": "🎌",
       "description": "crossed flags",
       "tags": ["crossed_flags"]
     },
     {
       "id": 1220,
-      "emojiFlags": "🏴",
+      "emoji": "🏴",
       "description": "black flag",
       "tags": ["black_flag"]
     },
     {
       "id": 1221,
-      "emojiFlags": "🏳️",
+      "emoji": "🏳️",
       "description": "white flag",
       "tags": ["white_flag"]
     },
     {
       "id": 1222,
-      "emojiFlags": "🏳️‍🌈",
+      "emoji": "🏳️‍🌈",
       "description": "rainbow flag",
       "tags": ["pride", "rainbow"]
     },
     {
       "id": 1223,
-      "emojiFlags": "🏴‍☠️",
+      "emoji": "🏴‍☠️",
       "description": "pirate flag",
       "tags": ["pirate_flag"]
     },
     {
       "id": 1224,
-      "emojiFlags": "🇦🇨",
+      "emoji": "🇦🇨",
       "description": "flag: Ascension Island",
       "tags": ["ascension_island"]
     },
     {
       "id": 1225,
-      "emojiFlags": "🇦🇩",
+      "emoji": "🇦🇩",
       "description": "flag: Andorra",
       "tags": ["andorra"]
     },
     {
       "id": 1226,
-      "emojiFlags": "🇦🇪",
+      "emoji": "🇦🇪",
       "description": "flag: United Arab Emirates",
       "tags": ["united_arab_emirates"]
     },
     {
       "id": 1227,
-      "emojiFlags": "🇦🇫",
+      "emoji": "🇦🇫",
       "description": "flag: Afghanistan",
       "tags": ["afghanistan"]
     },
     {
       "id": 1228,
-      "emojiFlags": "🇦🇬",
+      "emoji": "🇦🇬",
       "description": "flag: Antigua & Barbuda",
       "tags": ["antigua_barbuda"]
     },
     {
       "id": 1229,
-      "emojiFlags": "🇦🇮",
+      "emoji": "🇦🇮",
       "description": "flag: Anguilla",
       "tags": ["anguilla"]
     },
     {
       "id": 1230,
-      "emojiFlags": "🇦🇱",
+      "emoji": "🇦🇱",
       "description": "flag: Albania",
       "tags": ["albania"]
     },
     {
       "id": 1231,
-      "emojiFlags": "🇨🇳",
+      "emoji": "🇨🇳",
       "description": "flag: China",
       "tags": ["china"]
     },
     {
       "id": 1232,
-      "emojiFlags": "🇨🇷",
+      "emoji": "🇨🇷",
       "description": "flag: Costa Rica",
       "tags": ["costa_rica"]
     },
     {
       "id": 1233,
-      "emojiFlags": "🇨🇽",
+      "emoji": "🇨🇽",
       "description": "flag: Christmas Island",
       "tags": ["christmas_island"]
     },
     {
       "id": 1234,
-      "emojiFlags": "🇩🇯",
+      "emoji": "🇩🇯",
       "description": "flag: Djibouti",
       "tags": ["djibouti"]
     },
     {
       "id": 1235,
-      "emojiFlags": "🇪🇦",
+      "emoji": "🇪🇦",
       "description": "flag: Ceuta & Melilla",
       "tags": ["ceuta_melilla"]
     },
     {
       "id": 1236,
-      "emojiFlags": "🇪🇷",
+      "emoji": "🇪🇷",
       "description": "flag: Eritrea",
       "tags": ["eritrea"]
     },
     {
       "id": 1237,
-      "emojiFlags": "🇫🇲",
+      "emoji": "🇫🇲",
       "description": "flag: Micronesia",
       "tags": ["micronesia"]
     },
     {
       "id": 1238,
-      "emojiFlags": "🇬🇮",
+      "emoji": "🇬🇮",
       "description": "flag: Gibraltar",
       "tags": ["gibraltar"]
     },
     {
       "id": 1239,
-      "emojiFlags": "🇬🇷",
+      "emoji": "🇬🇷",
       "description": "flag: Greece",
       "tags": ["greece"]
     },
     {
       "id": 1240,
-      "emojiFlags": "🇭🇳",
+      "emoji": "🇭🇳",
       "description": "flag: Honduras",
       "tags": ["honduras"]
     }

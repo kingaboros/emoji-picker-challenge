@@ -2,23 +2,30 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
 .contentWrapper {
-  padding: 0.2rem 0.7rem 0 0.7rem;
+  padding: 0.2rem 0.5rem 0 0.2rem;
   word-wrap: break-word;
+  display: block;
+  margin: 0 auto;
+  background-color: $iconsBackground;
+  width: 29rem;
+  border: 0.1rem solid $borderColor;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 4rem;
+  left: 10rem;
 }
 
-.iconCategoryHeading {
-  font-size: 0.8rem;
-  font-weight: bold;
+.currentEmojiList {
+  display: block;
 }
 
 .emojiWrapper {
   display: flex;
   margin: 0 auto;
-  justify-content: space-evenly;
-  width: auto;
   height: 16rem;
   overflow: scroll;
   overflow-x: hidden;
+  border-radius: 0.4rem;
   @extend .container;
 }
 
@@ -26,12 +33,26 @@
   @extend .row;
 }
 
+.iconCategoryHeading {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 0 0.2rem 0.5rem;
+}
+
 .emojis {
   display: block;
-  justify-content: space-evenly;
   margin: 0 auto;
   width: 72rem;
   @extend .col-4;
+}
+
+.emojiIcons {
+  display: inline-block;
+  padding: 0.3rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 0.1rem solid $iconsBackground;
 }
 .emojiIcons:hover {
   text-decoration: none;
@@ -39,10 +60,6 @@
   background-color: $shadow;
   border: 0.1rem solid $shadow;
   border-radius: 0.4rem;
-}
-
-.currentEmojiList {
-  display: block;
 }
 
 .emojiList {
