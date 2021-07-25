@@ -13,15 +13,17 @@ const EmojiList = () => {
             {Object.keys(json).map(categ => {
               return (
                 <div>
-                  <h4 id={categ} className={emojiClasses.iconCategoryHeading}>
-                    {categ}
-                  </h4>
+                  <div>
+                    <h4 id={categ} className={emojiClasses.iconCategoryHeading}>
+                      {categ}
+                    </h4>
 
-                  {json[categ].map((emoji: any) => {
-                    return (
-                      <p className={emojiClasses.emojiIcons}>{emoji.emoji} </p>
-                    );
-                  })}
+                    {json[categ].map((emoji: any) => {
+                      return (
+                        <p className={emojiClasses.emojiIcons}>{emoji.emoji}</p>
+                      );
+                    })}
+                  </div>
                 </div>
               );
             })}

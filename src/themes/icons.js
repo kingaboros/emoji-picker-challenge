@@ -8,8 +8,16 @@ import { AiOutlineBulb } from 'react-icons/ai';
 import { VscSymbolMethod } from 'react-icons/vsc';
 
 const icons = {
-  clock: 'FiClock',
-  smiley: 'GoSmiley',
+  clock: <FiClock />,
+  smiley: <GoSmiley />,
+  people: <BsFillPeopleFill />,
+  leaf: <FaLeaf />,
+  food: <GiHamburger />,
+  travel: <GiCommercialAirplane />,
+  activities: <BiBall />,
+  objects: <AiOutlineBulb />,
+  symbols: <VscSymbolMethod />,
+  flags: <FiFlag />,
 };
 
 export default icons;

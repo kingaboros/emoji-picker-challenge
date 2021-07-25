@@ -17,7 +17,7 @@ const SearchBar = (data: any) => {
     setFilteredData(newFilter);
   };
   return (
-    <div className-={searchStyle.search}>
+    <div className={searchStyle.search}>
       <div className={searchStyle.searchInput}>
         <input
           type="text"
