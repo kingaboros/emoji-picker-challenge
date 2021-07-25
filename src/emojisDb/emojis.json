@@ -975,12 +975,6 @@
       "tags": ["point left"]
     },
     {
-      "id": 162,
-      "emoji": "👉",
-      "description": "backhand index pointing right",
-      "tags": ["point right"]
-    },
-    {
       "id": 163,
       "emoji": "👆",
       "description": "backhand index pointing up",
@@ -3830,12 +3824,6 @@
     },
     {
       "id": 626,
-      "emoji": "🍼",
-      "description": "baby bottle",
-      "tags": ["milk", "baby", "bottle"]
-    },
-    {
-      "id": 626,
       "emoji": "🥛",
       "description": "glass of milk",
       "category": "Food & Drink",
@@ -3940,31 +3928,31 @@
       "tags": ["chopsticks"]
     },
     {
-      "id": 631,
+      "id": 643,
       "emoji": "🍽️",
       "description": "fork and knife with plate",
       "tags": ["dining", "dinner", "plate"]
     },
     {
-      "id": 632,
+      "id": 644,
       "emoji": "🍴",
       "description": "fork and knife",
       "tags": ["cutlery"]
     },
     {
-      "id": 633,
+      "id": 645,
       "emoji": "🥄",
       "description": "spoon",
       "tags": ["spoon"]
     },
     {
-      "id": 634,
+      "id": 646,
       "emoji": "🔪",
       "description": "kitchen knife",
       "tags": ["cut", "chop"]
     },
     {
-      "id": 635,
+      "id": 647,
       "emoji": "🏺",
       "description": "amphora",
       "category": "Food & Drink",
@@ -3973,214 +3961,142 @@
   ],
   "Travel & Places": [
     {
-      "id": 636,
+      "id": 648,
       "emoji": "🌍",
       "description": "globe showing Europe-Africa",
       "tags": ["globe", "world", "international"]
     },
     {
-      "id": 637,
+      "id": 649,
       "emoji": "🌎",
       "description": "globe showing Americas",
       "tags": ["globe", "world", "international"]
     },
     {
-      "id": 638,
+      "id": 650,
       "emoji": "🌏",
       "description": "globe showing Asia-Australia",
       "tags": ["globe", "world", "international"]
     },
     {
-      "id": 639,
+      "id": 651,
       "emoji": "🌐",
       "description": "globe with meridians",
       "tags": ["world", "global", "international"]
     },
     {
-      "id": 640,
+      "id": 652,
       "emoji": "🗺️",
       "description": "world map",
       "tags": ["travel", "map"]
     },
     {
-      "id": 641,
+      "id": 653,
       "emoji": "🗾",
       "description": "map of Japan",
       "tags": ["japan"]
     },
     {
-      "id": 642,
+      "id": 654,
       "emoji": "🧭",
       "description": "compass",
       "tags": ["compass"]
     },
     {
-      "id": 643,
+      "id": 655,
       "emoji": "🏔️",
       "description": "snow-capped mountain",
       "tags": ["mountain", "snow"]
     },
     {
-      "id": 644,
+      "id": 656,
       "emoji": "🌋",
       "description": "volcano",
       "tags": ["volcano"]
     },
     {
-      "id": 645,
+      "id": 657,
       "emoji": "🗻",
       "description": "mount fuji",
       "tags": ["fuji"]
     },
     {
-      "id": 646,
+      "id": 658,
       "emoji": "🏕️",
       "description": "camping",
       "tags": ["camping"]
     },
     {
-      "id": 647,
+      "id": 659,
       "emoji": "🏖️",
       "description": "beach with umbrella",
       "tags": ["beach", "umbrella"]
     },
     {
-      "id": 648,
+      "id": 660,
       "emoji": "🏜️",
       "description": "desert",
       "tags": ["desert"]
     },
     {
-      "id": 649,
+      "id": 661,
       "emoji": "🏝️",
       "description": "desert island",
       "tags": ["island"]
     },
     {
-      "id": 650,
+      "id": 662,
       "emoji": "🏞️",
       "description": "national park",
       "tags": ["park"]
     },
     {
-      "id": 651,
+      "id": 663,
       "emoji": "🏟️",
       "description": "stadium",
       "tags": ["stadium"]
     },
     {
-      "id": 652,
+      "id": 664,
       "emoji": "🏛️",
       "description": "classical building",
       "tags": ["building"]
     },
     {
-      "id": 653,
+      "id": 665,
       "emoji": "🏗️",
       "description": "building construction",
       "tags": ["construction"]
     },
     {
-      "id": 654,
+      "id": 666,
       "emoji": "🧱",
       "description": "brick",
       "tags": ["bricks"]
     },
     {
-      "id": 655,
+      "id": 667,
       "emoji": "🏘️",
       "description": "houses",
       "tags": ["houses"]
     },
     {
-      "id": 656,
+      "id": 668,
       "emoji": "🏚️",
       "description": "derelict house",
       "tags": ["house"]
     },
     {
-      "id": 657,
+      "id": 669,
       "emoji": "🏠",
       "description": "house",
       "tags": ["house"]
     },
     {
-      "id": 658,
+      "id": 670,
       "emoji": "🏡",
       "description": "house with garden",
       "tags": ["house"]
-    },
-    {
-      "id": 659,
-      "emoji": "🏢",
-      "description": "office building",
-      "tags": ["office"]
-    },
-    {
-      "id": 660,
-      "emoji": "🏣",
-      "description": "Japanese post office",
-      "tags": ["post"]
-    },
-    {
-      "id": 661,
-      "emoji": "🏤",
-      "description": "post office",
-      "tags": ["post"]
-    },
-    {
-      "id": 662,
-      "emoji": "🏥",
-      "description": "hospital",
-      "tags": ["hospital"]
-    },
-    {
-      "id": 663,
-      "emoji": "🏦",
-      "description": "bank",
-      "tags": ["bank"]
-    },
-    {
-      "id": 664,
-      "emoji": "🏨",
-      "description": "hotel",
-      "tags": ["hotel"]
-    },
-    {
-      "id": 665,
-      "emoji": "🏩",
-      "description": "love hotel",
-      "tags": ["hotel"]
-    },
-    {
-      "id": 666,
-      "emoji": "🏪",
-      "description": "convenience store",
-      "tags": ["store"]
-    },
-    {
-      "id": 667,
-      "emoji": "🏫",
-      "description": "school",
-      "tags": ["school"]
-    },
-    {
-      "id": 668,
-      "emoji": "🏬",
-      "description": "department store",
-      "tags": ["store"]
-    },
-    {
-      "id": 669,
-      "emoji": "🏭",
-      "description": "factory",
-      "tags": ["factory"]
-    },
-    {
-      "id": 670,
-      "emoji": "🏯",
-      "description": "Japanese castle",
-      "tags": ["castle"]
     },
     {
       "id": 671,
