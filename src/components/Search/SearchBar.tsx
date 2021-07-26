@@ -18,9 +18,9 @@ const SearchBar = (props: any) => {
           type="text"
           placeholder={strings.input.searchField}
           className={searchStyle.searchInputField}
-          // onChange={event => {
-          //   setSearchTerm(event.target.value);
-          // }}
+          onChange={event => {
+            setSearchTerm(event.target.value);
+          }}
         />
         <AiOutlineSearch className={searchStyle.searchIcon} />
       </div>

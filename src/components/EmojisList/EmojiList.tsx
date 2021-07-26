@@ -4,7 +4,6 @@ import * as emojiClasses from './EmojiList.module.scss';
 
 const EmojiList = (props: any) => {
   const json = require('../../emojisDb/emojis.json');
-  const emojisScroll = useRef<HTMLHeadingElement>(null);
 
   return (
     <div className={emojiClasses.contentWrapper}>
@@ -18,7 +17,6 @@ const EmojiList = (props: any) => {
                     <h4
                       key={categ}
                       className={emojiClasses.iconCategoryHeading}
-                      ref={props.ref}
                     >
                       {categ}
                     </h4>
