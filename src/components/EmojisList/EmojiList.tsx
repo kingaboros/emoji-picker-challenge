@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import SearchBar from '../Search/SearchBar';
 
 import * as emojiClasses from './EmojiList.module.scss';
 
@@ -33,6 +34,7 @@ const EmojiList = (props: any) => {
               );
             })}
           </div>
+          <SearchBar />
         </div>
       </div>
     </div>
