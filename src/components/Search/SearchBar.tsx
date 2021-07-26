@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { AiOutlineSearch } from 'react-icons/ai';
 
@@ -9,8 +9,11 @@ import strings from '../../themes/strings';
 const json = require('../../emojisDb/emojis.json');
 
 const SearchBar = (props: any) => {
-  const [searchTerm, setSearchTerm] = useState(' ');
+  console.log(props);
 
+  const getSearchTerm = (event: any) => {
+    props.searchKeyword(event.target.value);
+  };
   return (
     <div className={searchStyle.search}>
       <div className={searchStyle.searchInput}>
@@ -18,31 +21,10 @@ const SearchBar = (props: any) => {
           type="text"
           placeholder={strings.input.searchField}
           className={searchStyle.searchInputField}
-          onChange={event => {
-            setSearchTerm(event.target.value);
-          }}
+          value={props.term}
+          onChange={getSearchTerm}
         />
         <AiOutlineSearch className={searchStyle.searchIcon} />
-      </div>
-      <div>
-        {[json]
-          .filter((val: any) => {
-            if (searchTerm === ' ') {
-              return val;
-            } else if (
-              val.tags.toLowerCase().includes(searchTerm.toLowerCase())
-            ) {
-              console.log(searchTerm);
-              return val;
-            }
-          })
-          .map((val: any, key: any) => {
-            return (
-              <div>
-                <p key={key.id}>{val.emoji}</p>
-              </div>
-            );
-          })}
       </div>
     </div>
   );
