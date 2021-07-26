@@ -8,24 +8,26 @@ import icons from '../../themes/icons';
 import * as classes from './IconTabs.module.scss';
 
 const IconsTab = (props: any) => {
-  const [emojis, setEmojis] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+
+  const json = require('../../emojisDb/emojis.json');
 
   const searchHandler = (searchTerm: any) => {
     setSearchTerm(searchTerm);
     if (searchTerm !== ' ') {
-      const filteredArr = emojis.filter((emoji: any) => {
-        return Object.keys(emoji)
-          .join(' ')
-          .toLowerCase()
-          .includes(searchTerm.toLowerCase());
+      const filteredArr: any = Object.values(json).map((emoji: any) => {
+        return emoji.filter((item: any) =>
+          item.description.toLowerCase().includes(searchTerm.toLowerCase())
+        );
       });
       setSearchResults(filteredArr);
+      console.log(filteredArr);
     } else {
-      setSearchResults(emojis);
+      setSearchResults(json);
     }
   };
+
   return (
     <div className={classes.iconsTabWrapper}>
       <ul className={classes.tabs}>
@@ -39,7 +41,11 @@ const IconsTab = (props: any) => {
         <li className={classes.icons}>{icons.objects}</li>
         <li className={classes.icons}>{icons.flags}</li>
       </ul>
-      <SearchBar term={searchTerm} searchKeyword={searchHandler} />
+      <SearchBar
+        term={searchTerm}
+        searchKeyword={searchHandler}
+        emojis={searchTerm.length < 1 ? json : searchResults}
+      />
       <EmojiList />
     </div>
   );

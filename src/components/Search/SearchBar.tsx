@@ -26,6 +26,7 @@ const SearchBar = (props: any) => {
         />
         <AiOutlineSearch className={searchStyle.searchIcon} />
       </div>
+      <div>{props.emojis}</div>
     </div>
   );
 };

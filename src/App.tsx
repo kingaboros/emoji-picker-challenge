@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className={classes.chatInputPage}>
-      {emojisShown && <EmojiList />}
+      {emojisShown && <IconsTab />}
       <ChatInput onShowEmojis={showEmojiHandler} />
     </div>
   );
