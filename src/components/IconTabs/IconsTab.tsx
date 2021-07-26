@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import EmojiList from '../EmojisList/EmojiList';
 import SearchBar from '../Search/SearchBar';
@@ -7,14 +7,17 @@ import icons from '../../themes/icons';
 
 import * as classes from './IconTabs.module.scss';
 
-const IconsTab = () => {
+const IconsTab = (props: any) => {
   const handleClick = (e: any) => {
-    e.preventDefault();
-    console.log('Categ clicked');
+    console.log('categ clicked');
+    window.scrollTo({
+      behavior: 'smooth',
+      top: props.emojisScroll.current.offsetTop,
+    });
   };
   return (
     <div className={classes.iconsTabWrapper}>
-      <ul className={classes.tabs} onClick={handleClick}>
+      <ul className={classes.tabs}>
         <li className={classes.icons}>{icons.clock}</li>
         <li className={classes.icons}>{icons.smiley}</li>
         <li className={classes.icons}>{icons.people}</li>
@@ -23,10 +26,12 @@ const IconsTab = () => {
         <li className={classes.icons}>{icons.travel}</li>
         <li className={classes.icons}>{icons.activities}</li>
         <li className={classes.icons}>{icons.objects}</li>
-        <li className={classes.icons}>{icons.flags}</li>
+        <li className={classes.icons} onClick={handleClick}>
+          {icons.flags}
+        </li>
       </ul>
       <SearchBar />
-      <EmojiList />
+      <EmojiList ref={props.emojisScroll} />
     </div>
   );
 };

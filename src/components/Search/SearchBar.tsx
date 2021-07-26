@@ -9,18 +9,8 @@ import strings from '../../themes/strings';
 const json = require('../../emojisDb/emojis.json');
 
 const SearchBar = (props: any) => {
-  const [userInput, setUserInput] = useState('');
-  const [filteredData, setFilteredData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState(' ');
 
-  const handleFilter = (e: any) => {
-    const searchTerm = e.target.value;
-    const jsonArr = Object.keys(json);
-    const newFilter: any = jsonArr.filter((value: any) => {
-      return value.description.includes(searchTerm);
-    });
-    console.log(searchTerm);
-    setFilteredData(newFilter);
-  };
   return (
     <div className={searchStyle.search}>
       <div className={searchStyle.searchInput}>
@@ -28,18 +18,31 @@ const SearchBar = (props: any) => {
           type="text"
           placeholder={strings.input.searchField}
           className={searchStyle.searchInputField}
-          onChange={handleFilter}
+          // onChange={event => {
+          //   setSearchTerm(event.target.value);
+          // }}
         />
         <AiOutlineSearch className={searchStyle.searchIcon} />
       </div>
       <div>
-        {filteredData.map((value: any, description: any) => {
-          return (
-            <div>
-              <p key={value.id}>{value.emoji}</p>
-            </div>
-          );
-        })}
+        {[json]
+          .filter((val: any) => {
+            if (searchTerm === ' ') {
+              return val;
+            } else if (
+              val.tags.toLowerCase().includes(searchTerm.toLowerCase())
+            ) {
+              console.log(searchTerm);
+              return val;
+            }
+          })
+          .map((val: any, key: any) => {
+            return (
+              <div>
+                <p key={key.id}>{val.emoji}</p>
+              </div>
+            );
+          })}
       </div>
     </div>
   );
