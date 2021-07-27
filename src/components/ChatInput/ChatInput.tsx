@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 
-import { GoSmiley } from 'react-icons/go';
-
 import strings from '../../themes/strings';
+import icons from '../../themes/icons';
 
 import * as classes from './ChatInput.module.scss';
 
@@ -31,11 +30,9 @@ const ChatInput = (props: any) => {
               placeholder={strings.input.inputField}
               onChange={(e: any) => setValue(e.target.value)}
             />
-
-            <GoSmiley
-              className={classes.inputIcon}
-              onClick={props.onShowEmojis}
-            />
+            <i className={classes.inputIcon} onClick={props.onShowEmojis}>
+              {icons.smiley}
+            </i>
           </Form.Group>
           <Button className={classes.submitBtn} type="button">
             {strings.button.submitBtn}

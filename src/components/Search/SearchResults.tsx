@@ -6,7 +6,7 @@ const SearchResults = (props: any) => {
   return (
     <div className={searchStyle.searchResults}>
       <h4 className={emojiStyle.iconCategoryHeading}>Search Results</h4>
-      <p className={emojiStyle.emojiIcons} results={props.state}></p>
+      <p className={emojiStyle.emojiIcons} results={props.results}></p>
     </div>
   );
 };

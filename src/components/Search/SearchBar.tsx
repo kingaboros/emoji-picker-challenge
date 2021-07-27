@@ -24,6 +24,7 @@ const SearchBar = (props: any) => {
           value={props.term}
           onChange={getSearchTerm}
         />
+
         <AiOutlineSearch className={searchStyle.searchIcon} />
       </div>
     </div>

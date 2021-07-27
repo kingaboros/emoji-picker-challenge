@@ -52,7 +52,7 @@ const IconsTab = (props: any) => {
         searchKeyword={searchHandler}
         onShowResults={showResultsHandler}
       />
-      {showResults && <SearchResults />}
+      {showResults && <SearchResults results={searchResults} />}
       <EmojiList />
     </div>
   );

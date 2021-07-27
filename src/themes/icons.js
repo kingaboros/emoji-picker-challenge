@@ -6,6 +6,7 @@ import { GiHamburger, GiCommercialAirplane } from 'react-icons/gi';
 import { BiBall } from 'react-icons/bi';
 import { AiOutlineBulb } from 'react-icons/ai';
 import { VscSymbolMethod } from 'react-icons/vsc';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 const icons = {
   clock: <FiClock />,
@@ -18,6 +19,7 @@ const icons = {
   objects: <AiOutlineBulb />,
   symbols: <VscSymbolMethod />,
   flags: <FiFlag />,
+  search: <AiOutlineSearch />,
 };
 
 export default icons;
