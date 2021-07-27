@@ -6,10 +6,12 @@ import SearchBar from '../Search/SearchBar';
 import icons from '../../themes/icons';
 
 import * as classes from './IconTabs.module.scss';
+import SearchResults from '../Search/SearchResults';
 
 const IconsTab = (props: any) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  const [showResults, setShowResults] = useState(false);
 
   const json = require('../../emojisDb/emojis.json');
 
@@ -24,8 +26,12 @@ const IconsTab = (props: any) => {
       setSearchResults(filteredArr);
       console.log(filteredArr);
     } else {
-      setSearchResults(json);
+      setSearchResults(Object.values(json));
     }
+  };
+
+  const showResultsHandler = () => {
+    setShowResults(true);
   };
 
   return (
@@ -44,8 +50,9 @@ const IconsTab = (props: any) => {
       <SearchBar
         term={searchTerm}
         searchKeyword={searchHandler}
-        emojis={searchTerm.length < 1 ? json : searchResults}
+        onShowResults={showResultsHandler}
       />
+      {showResults && <SearchResults />}
       <EmojiList />
     </div>
   );

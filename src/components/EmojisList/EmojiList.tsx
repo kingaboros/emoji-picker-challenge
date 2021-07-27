@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react';
-import SearchBar from '../Search/SearchBar';
+import React from 'react';
 
 import * as emojiClasses from './EmojiList.module.scss';
 

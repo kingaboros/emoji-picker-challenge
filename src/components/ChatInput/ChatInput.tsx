@@ -12,7 +12,7 @@ const ChatInput = (props: any) => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log(value);
+
     setValue('');
   };
 

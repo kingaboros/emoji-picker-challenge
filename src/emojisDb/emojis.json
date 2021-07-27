@@ -3,26 +3,22 @@
     {
       "id": 1,
       "emoji": "😀",
-      "description": "grinning face",
-      "tags": ["smile", "happy"]
+      "description": "grinning face smile happy"
     },
     {
       "id": 2,
       "emoji": "😃",
-      "description": "grinning face with big eyes",
-      "tags": ["happy", "joy", "haha"]
+      "description": "grinning face with big eyes happy, joy, haha"
     },
     {
       "id": 3,
       "emoji": "😄",
-      "description": "grinning face with smiling eyes",
-      "tags": ["happy", "joy", "laugh", "pleased"]
+      "description": "grinning face with smiling eyes happy joy"
     },
     {
       "id": 4,
       "emoji": "😁",
-      "description": "beaming face with smiling eyes",
-      "tags": ["teeth"]
+      "description": "beaming face with smiling eyes teeth smile"
     },
     {
       "id": 5,
