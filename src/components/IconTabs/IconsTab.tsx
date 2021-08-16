@@ -12,6 +12,7 @@ const IconsTab = (props: any) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
+  const [displayFilteredArr, setDisplayFilteredArr] = useState(false);
 
   const json = require('../../emojisDb/emojis.json');
 
@@ -32,6 +33,7 @@ const IconsTab = (props: any) => {
 
   const showResultsHandler = () => {
     setShowResults(true);
+    setDisplayFilteredArr(true);
   };
 
   return (
@@ -53,7 +55,7 @@ const IconsTab = (props: any) => {
         onShowResults={showResultsHandler}
       />
       {showResults && <SearchResults results={searchResults} />}
-      <EmojiList />
+      <EmojiList searchResults={displayFilteredArr} />
     </div>
   );
 };

@@ -6,11 +6,7 @@ import * as searchStyle from './SearchBar.module.scss';
 
 import strings from '../../themes/strings';
 
-const json = require('../../emojisDb/emojis.json');
-
 const SearchBar = (props: any) => {
-  console.log(props);
-
   const getSearchTerm = (event: any) => {
     props.searchKeyword(event.target.value);
   };

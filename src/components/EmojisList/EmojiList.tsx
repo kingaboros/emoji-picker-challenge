@@ -23,7 +23,11 @@ const EmojiList = (props: any) => {
 
                     {json[categ].map((emoji: any) => {
                       return (
-                        <p key={emoji.id} className={emojiClasses.emojiIcons}>
+                        <p
+                          key={emoji.id}
+                          className={emojiClasses.emojiIcons}
+                          results={props.searchResults}
+                        >
                           {emoji.emoji}
                         </p>
                       );
