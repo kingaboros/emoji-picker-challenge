@@ -12,7 +12,7 @@ const IconsTab = (props: any) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
-  const [displayFilteredArr, setDisplayFilteredArr] = useState(false);
+  const [emoji, setEmoji] = useState('');
 
   const json = require('../../emojisDb/emojis.json');
 
@@ -25,17 +25,20 @@ const IconsTab = (props: any) => {
         );
       });
       setSearchResults(filteredArr);
+      setShowResults(true);
       console.log(filteredArr);
     } else {
       setSearchResults(Object.values(json));
     }
   };
 
-  const showResultsHandler = () => {
-    setShowResults(true);
-    setDisplayFilteredArr(true);
-  };
+  const showResultsHandler = () => {};
 
+  const handleClick = (e: any) => {
+    let chosenEmoji = emoji + e.target.innerHTML;
+    setEmoji(chosenEmoji);
+    console.log(chosenEmoji);
+  };
   return (
     <div className={classes.iconsTabWrapper}>
       <ul className={classes.tabs}>
@@ -52,10 +55,10 @@ const IconsTab = (props: any) => {
       <SearchBar
         term={searchTerm}
         searchKeyword={searchHandler}
-        onShowResults={showResultsHandler}
+        onShowResults={setSearchResults}
       />
       {showResults && <SearchResults results={searchResults} />}
-      <EmojiList searchResults={displayFilteredArr} />
+      <EmojiList clickHandler={handleClick} />
     </div>
   );
 };

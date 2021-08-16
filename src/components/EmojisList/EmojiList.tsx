@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import * as emojiClasses from './EmojiList.module.scss';
 
 const EmojiList = (props: any) => {
+  const [displayFilteredArr, setDisplayFilteredArr] = useState(false);
+
   const json = require('../../emojisDb/emojis.json');
 
   return (
@@ -26,7 +28,7 @@ const EmojiList = (props: any) => {
                         <p
                           key={emoji.id}
                           className={emojiClasses.emojiIcons}
-                          results={props.searchResults}
+                          onClick={props.clickHandler}
                         >
                           {emoji.emoji}
                         </p>

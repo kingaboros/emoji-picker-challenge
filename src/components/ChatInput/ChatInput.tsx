@@ -28,7 +28,7 @@ const ChatInput = (props: any) => {
               id="typeText"
               className={classes.input}
               placeholder={strings.input.inputField}
-              onChange={(e: any) => setValue(e.target.value)}
+              onChange={e => setValue(e.target.value)}
             />
             <i className={classes.inputIcon} onClick={props.onShowEmojis}>
               {icons.smiley}
