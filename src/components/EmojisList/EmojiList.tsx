@@ -3,9 +3,16 @@ import React, { useState } from 'react';
 import * as emojiClasses from './EmojiList.module.scss';
 
 const EmojiList = (props: any) => {
-  const [displayFilteredArr, setDisplayFilteredArr] = useState(false);
-
   const json = require('../../emojisDb/emojis.json');
+
+  const [displayFilteredArr, setDisplayFilteredArr] = useState(json);
+  console.log('displayFilteredArr ⬇');
+  console.log(displayFilteredArr);
+
+  const stateChangeHandler = (event: any) => {
+    setDisplayFilteredArr(props.filteredArr);
+    console.log(props.filteredArr);
+  };
 
   return (
     <div className={emojiClasses.contentWrapper}>
@@ -23,12 +30,13 @@ const EmojiList = (props: any) => {
                       {categ}
                     </h4>
 
-                    {json[categ].map((emoji: any) => {
+                    {displayFilteredArr[categ].map((emoji: any) => {
                       return (
                         <p
                           key={emoji.id}
                           className={emojiClasses.emojiIcons}
                           onClick={props.clickHandler}
+                          onChange={stateChangeHandler}
                         >
                           {emoji.emoji}
                         </p>

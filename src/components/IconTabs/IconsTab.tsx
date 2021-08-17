@@ -32,7 +32,7 @@ const IconsTab = (props: any) => {
     }
   };
 
-  const showResultsHandler = () => {};
+  // const showResultsHandler = () => {};
 
   const handleClick = (e: any) => {
     let chosenEmoji = emoji + e.target.innerHTML;
