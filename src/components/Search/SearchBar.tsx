@@ -1,15 +1,11 @@
 import React from 'react';
 
-import { AiOutlineSearch } from 'react-icons/ai';
-
 import * as searchStyle from './SearchBar.module.scss';
 
 import strings from '../../themes/strings';
+import icons from '../../themes/icons';
 
 const SearchBar = (props: any) => {
-  const getSearchTerm = (event: any) => {
-    props.searchKeyword(event.target.value);
-  };
   return (
     <div className={searchStyle.search}>
       <div className={searchStyle.searchInput}>
@@ -17,12 +13,13 @@ const SearchBar = (props: any) => {
           type="text"
           placeholder={strings.input.searchField}
           className={searchStyle.searchInputField}
-          value={props.term}
-          onChange={getSearchTerm}
+          value={props.value}
+          onChange={props.onChange}
         />
-
-        <AiOutlineSearch className={searchStyle.searchIcon} />
       </div>
+      <i className={searchStyle.searchIcon} onClick={props.onShowEmojis}>
+        {icons.search}
+      </i>
     </div>
   );
 };

@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import * as classes from './components/ChatInput/ChatInput.module.scss';
 
 import ChatInput from './components/ChatInput/ChatInput';
-import IconsTab from './components/IconTabs/IconsTab';
-import Search from './components/Search/Search';
+import Modal from './components/IconTabs/Modal';
 
 const App = () => {
   const [emojisShown, setEmojisShown] = useState(false);
@@ -22,7 +21,7 @@ const App = () => {
 
   return (
     <div className={classes.chatInputPage}>
-      {emojisShown && <IconsTab onClick={emojiPick} />}
+      {emojisShown && <Modal />}
       <ChatInput onShowEmojis={showEmojiHandler} />
     </div>
   );
