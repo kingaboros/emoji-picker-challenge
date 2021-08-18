@@ -18,12 +18,10 @@ const json = require('../../emojisDb/emojis.json');
 const IconsTab = (props: any) => {
   const [filteredData, setFilteredData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-  const [showResults, setShowResults] = useState(false);
-  const [emoji, setEmoji] = useState('');
 
   const handleFilter = (event: any) => {
     const searchTerm = event.target.value;
+    setSearchTerm(searchTerm);
     const filteredArr: any = Object.values(json).map((emoji: any) => {
       return emoji.filter((item: any) =>
         item.description.toLowerCase().includes(searchTerm.toLowerCase())
@@ -37,29 +35,6 @@ const IconsTab = (props: any) => {
     }
   };
 
-  // const searchHandler = (searchTerm: any) => {
-  //   setSearchTerm(searchTerm);
-  //   if (searchTerm !== ' ') {
-  //     const filteredArr: any = Object.values(json).map((emoji: any) => {
-  //       return emoji.filter((item: any) =>
-  //         item.description.toLowerCase().includes(searchTerm.toLowerCase())
-  //       );
-  //     });
-  //     setSearchResults(filteredArr);
-  //     setShowResults(true);
-  //     console.log(filteredArr);
-  //   } else {
-  //     setSearchResults(Object.values(json));
-  //   }
-  // };
-
-  // const showResultsHandler = () => {};
-
-  // const handleClick = (e: any) => {
-  //   let chosenEmoji = emoji + e.target.innerHTML;
-  //   setEmoji(chosenEmoji);
-  //   console.log(chosenEmoji);
-  // };
   return (
     <div className={classes.iconsTabWrapper}>
       <ul className={classes.tabs}>
@@ -79,28 +54,30 @@ const IconsTab = (props: any) => {
             type="text"
             placeholder={strings.input.searchField}
             className={searchStyle.searchInputField}
-            // value={searchTerm}
+            value={searchTerm}
             onChange={handleFilter}
           />
-
           <AiOutlineSearch className={searchStyle.searchIcon} />
         </div>
-        {filteredData.length != 0 && (
-          <div className={searchStyle.searchResults}>
+
+        {filteredData.length !== 0 && (
+          <div className={searchStyle.searchResultsWrapper}>
             <h4 className={emojiStyle.iconCategoryHeading}>Search Results</h4>
-            <div>
-              {filteredData.map((emoji: any) => {
-                return (
-                  <p key={emoji.id} className={emojiClasses.emojiIcons}>
-                    {emoji.emoji}
-                  </p>
-                );
-              })}
+            <div className={searchStyle.searchResults}>
+              {filteredData.map((item: any) =>
+                item.map((emoji: any) => {
+                  return (
+                    <p key={emoji.id} className={emojiClasses.emojiIcons}>
+                      {emoji.emoji}
+                    </p>
+                  );
+                })
+              )}
             </div>
           </div>
         )}
       </div>
-      {showResults && <SearchResults results={searchResults} />}
+
       <div className={emojiClasses.contentWrapper}>
         <div className={emojiClasses.currentEmojiList}>
           <div className={emojiClasses.emojiWrapper}>
@@ -118,7 +95,11 @@ const IconsTab = (props: any) => {
 
                       {json[categ].map((emoji: any) => {
                         return (
-                          <p key={emoji.id} className={emojiClasses.emojiIcons}>
+                          <p
+                            key={emoji.id}
+                            className={emojiClasses.emojiIcons}
+                            onClick={props.onClick}
+                          >
                             {emoji.emoji}
                           </p>
                         );

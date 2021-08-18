@@ -2,7 +2,7 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
 .contentWrapper {
-  padding: 0.2rem 0.5rem 0 0.2rem;
+  padding: 0.2rem 0.8rem 0 0.2rem;
   word-wrap: break-word;
   display: block;
   margin: 0 auto;
@@ -15,6 +15,7 @@
 }
 
 .emojiWrapper {
+  margin-right: -1rem;
   display: flex;
   margin: 0 auto;
   height: 16rem;

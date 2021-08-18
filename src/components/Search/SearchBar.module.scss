@@ -3,6 +3,7 @@
 
 .search {
   background-color: $iconsBackground;
+  padding-right: -0.2rem;
 }
 
 .searchInput {
@@ -28,6 +29,13 @@
   right: -0.5rem;
 }
 
+.searchResultsWrapper {
+  padding: 0.2rem 0.7rem 0 0.2rem;
+}
+
 .searchResults {
-  padding-left: 0.2rem;
+  padding-right: 0.6rem;
+  height: 5rem;
+  overflow: scroll;
+  overflow-x: hidden;
 }

@@ -1453,6 +1453,7 @@ export const searchIcon: string;
 export const searchInput: string;
 export const searchInputField: string;
 export const searchResults: string;
+export const searchResultsWrapper: string;
 export const shadow: string;
 export const shadowLg: string;
 export const shadowNone: string;

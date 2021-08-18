@@ -8,14 +8,21 @@ import Search from './components/Search/Search';
 
 const App = () => {
   const [emojisShown, setEmojisShown] = useState(false);
+  const [emoji, setEmoji] = useState([]);
 
   const showEmojiHandler = () => {
     setEmojisShown(true);
   };
 
+  const emojiPick = (e: any) => {
+    let chosenEmoji = emoji + e.target.innerHTML;
+    setEmoji(chosenEmoji);
+    console.log(chosenEmoji);
+  };
+
   return (
     <div className={classes.chatInputPage}>
-      {emojisShown && <IconsTab />}
+      {emojisShown && <IconsTab onClick={emojiPick} />}
       <ChatInput onShowEmojis={showEmojiHandler} />
     </div>
   );
