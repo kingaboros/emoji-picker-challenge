@@ -12,6 +12,7 @@ import * as classes from './IconTabs.module.scss';
 import * as searchStyle from '../Search/SearchBar.module.scss';
 import * as emojiStyle from '../EmojisList/EmojiList.module.scss';
 import * as emojiClasses from '../EmojisList/EmojiList.module.scss';
+import IconsMenu from './IconsMenu';
 
 const json = require('../../emojisDb/emojis.json');
 
@@ -37,17 +38,7 @@ const IconsTab = (props: any) => {
 
   return (
     <div className={classes.iconsTabWrapper}>
-      <ul className={classes.tabs}>
-        <li className={classes.icons}>{icons.clock}</li>
-        <li className={classes.icons}>{icons.smiley}</li>
-        <li className={classes.icons}>{icons.people}</li>
-        <li className={classes.icons}>{icons.leaf}</li>
-        <li className={classes.icons}>{icons.food}</li>
-        <li className={classes.icons}>{icons.travel}</li>
-        <li className={classes.icons}>{icons.activities}</li>
-        <li className={classes.icons}>{icons.objects}</li>
-        <li className={classes.icons}>{icons.flags}</li>
-      </ul>
+      <IconsMenu />
       <div className={searchStyle.search}>
         <div className={searchStyle.searchInput}>
           <input

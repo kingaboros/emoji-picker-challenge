@@ -298,7 +298,6 @@ export const containerLg: string;
 export const containerMd: string;
 export const containerSm: string;
 export const containerXl: string;
-export const currentTab: string;
 export const customCheckbox: string;
 export const customControl: string;
 export const customControlInline: string;
