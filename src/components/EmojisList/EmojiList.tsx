@@ -5,12 +5,12 @@ import * as emojiClasses from './EmojiList.module.scss';
 const EmojiList = (props: any) => {
   const json = require('../../emojisDb/emojis.json');
 
-  const [displayFilteredArr, setDisplayFilteredArr] = useState(json);
+  const [filteredData, setFilteredData] = useState(json);
   console.log('displayFilteredArr ⬇');
-  console.log(displayFilteredArr);
+  console.log(filteredData);
 
   const stateChangeHandler = (event: any) => {
-    setDisplayFilteredArr(props.filteredArr);
+    setFilteredData(props.filteredArr);
     console.log(props.filteredArr);
   };
 
@@ -29,8 +29,8 @@ const EmojiList = (props: any) => {
                     >
                       {categ}
                     </h4>
-
-                    {displayFilteredArr[categ].map((emoji: any) => {
+                    {filteredData.length != 0 && (
+                      {filteredData[categ].map((emoji: any) => {
                       return (
                         <p
                           key={emoji.id}
@@ -42,6 +42,7 @@ const EmojiList = (props: any) => {
                         </p>
                       );
                     })}
+                    )}
                   </div>
                 </div>
               );
